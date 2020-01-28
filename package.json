@@ -1,0 +1,41 @@
+{
+  "name": "cc11-crypticapi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:caxwel/crypticgen.git",
+  "author": "Max Turer",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint --fix --ext .js .",
+    "test": "mocha test && yarn lint",
+    "migrate": "knex migrate:latest --knexfile src/knexfile.js",
+    "rollback": "knex migrate:rollback --knexfile src/knexfile.js ",
+    "precommit": "pretty-quick --staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "knex": "^0.20.8",
+    "pg": "^7.17.1",
+    "underscore": "^1.9.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-problems": "^3.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "husky": "^4.2.1",
+    "mocha": "^7.0.1",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1",
+    "pretty-quick": "^2.0.1"
+  }
+}
