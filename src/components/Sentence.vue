@@ -1,6 +1,6 @@
 <template>
   <div id="hello">
-    <div id="titleAll">
+    <div id="titleNew">
       <h1>Start With This:</h1>
     </div>
     <div id="generated">
@@ -122,5 +122,17 @@ export default {
 
 #genButton:focus {
   outline: none !important;
+}
+
+#titleNew {
+    /* position: absolute; */
+    z-index: 2;
+    width: 110%;
+    color: #000;
+    font-family: 'Petit Formal Script', cursive;
+    font-size: 200%;
+    margin-bottom: -60px;
+    margin-top: -100px;
+    text-shadow: 2px 2px #fff;
 }
 </style>

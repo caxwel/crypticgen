@@ -62,14 +62,15 @@ export default {
   justify-content: center;
 }
 
-#titleAll h1 {
+#titleAll {
+    z-index: 2;
+    width: 110%;
     color: #000;
     font-family: 'Petit Formal Script', cursive;
-}
-
-#titleAll {
-    margin-bottom: -10px;
-    margin-top: -15px;
+    font-size: 150%;
+    margin-bottom: -40px;
+    margin-top: -40px;
+    text-shadow: 2px 2px #fff;
 }
 
 #inside {

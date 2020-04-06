@@ -82,7 +82,7 @@ html, body {
 }
 
 #titleText {
-  font-size: 500%;
+  font-size: 600%;
   font-family: 'Petit Formal Script', cursive;
   text-shadow: 2px 2px #000;
   width: 40%;
