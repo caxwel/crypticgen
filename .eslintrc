@@ -8,10 +8,9 @@
       "node": true,
       "mocha": true
     },
-    "plugins": ["prettier"],
+    "plugins": ["vue"],
     "rules": {
-      "prettier/prettier": "error",
       "no-console": 0
     },
-    "extends": ["eslint:recommended", "problems", "plugin:prettier/recommended"]
+    "extends": ["plugin:vue/recommended"]
   }
