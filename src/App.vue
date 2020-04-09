@@ -192,7 +192,7 @@ html, body {
   }
 
   #hello {
-    height: 40%;
+    height: 45%;
   }
 
   #allOfThem {
@@ -205,7 +205,11 @@ html, body {
   }
 
   #twit [data-v-28d66af3] {
-    margin-bottom: 5vh;
+    margin-bottom: 3vh;
+  }
+
+  #sentList {
+    width: 100%;
   }
 
   #titleAll {
