@@ -53,12 +53,12 @@ export default {
 <style>
 #allOfThem {
   width: 90%;
-  height: 50%;
+  height: 40%;
   background-image: url("../assets/quartz.jpg");
   background-size: cover;
   display:flex;
   align-items: center;
-    flex-direction: column;
+ flex-direction: column;
   justify-content: center;
 }
 
@@ -67,9 +67,9 @@ export default {
     width: 110%;
     color: #000;
     font-family: 'Petit Formal Script', cursive;
-    font-size: 150%;
-    margin-bottom: -40px;
-    margin-top: -40px;
+    font-size: 1.9vw;
+    margin-bottom: -3.5vw;
+    margin-top: -4vw;
     text-shadow: 2px 2px #fff;
 }
 

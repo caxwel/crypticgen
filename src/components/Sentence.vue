@@ -17,14 +17,23 @@
     >
       CLICK HERE TO GENERATE
     </button>
+    <br>
+    <Twitter
+      :sentence="sentence"
+      :canttweet="waiting"
+    />
   </div>
 </template>
 
 <script>
 import axios from 'axios';
+import Twitter from './Twitter.vue'
 
 export default {
   name: 'Sentence',
+  components: {
+    Twitter
+  },
   data: () => ({
     sentence: "Your first prompt awaits... 🖋",
     waiting: true
@@ -51,7 +60,7 @@ export default {
 <style>
 #hello {
   width: 90%;
-  height: 50%;
+  height: 60%;
   display: flex;
   align-items: center;
     justify-content: center;
@@ -130,9 +139,10 @@ export default {
     width: 110%;
     color: #000;
     font-family: 'Petit Formal Script', cursive;
-    font-size: 200%;
-    margin-bottom: -60px;
-    margin-top: -100px;
+    font-size: 2.5vw;
+    margin-bottom: -5vw;
+    margin-top: -5vw;
     text-shadow: 2px 2px #fff;
 }
+
 </style>

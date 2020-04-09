@@ -36,7 +36,6 @@ export default {
       .get('/api/allSentences')
       .then(response => {
         this.sentenceList = response.data;
-        console.log(this.sentenceList);
       })
       .catch(console.error)
   },
@@ -44,7 +43,7 @@ export default {
     refreshSent (s) {
       this.generated = s;
       this.sentenceList.push(this.generated);
-      console.log(this.generated);
+      // console.log(this.generated);
     }
   }
 }
@@ -82,10 +81,14 @@ html, body {
 }
 
 #titleText {
-  font-size: 600%;
+  font-size: 8vw;
   font-family: 'Petit Formal Script', cursive;
   text-shadow: 2px 2px #000;
   width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #container2 {
