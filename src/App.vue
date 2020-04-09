@@ -100,4 +100,41 @@ html, body {
   justify-content: center;
 }
 
+
+@media only screen and (orientation: portrait) {
+  #container {
+    flex-direction: column;
+    height: 95%;
+  }
+
+  #container2 {
+    height: 80%;
+    width: 95%;
+  }
+
+  #titleText {
+    width: 95%;
+    font-size: 8vw;
+    height: 20%;
+  }
+
+  #hello {
+    height: 50%;
+  }
+
+  #titleNew {
+    font-size: 4.7vw;
+    margin-bottom: -8.5vw;
+  }
+
+  #twit [data-v-28d66af3] {
+    margin-bottom: 5vh;
+  }
+
+  #titleAll {
+    font-size: 3.5vw;
+    margin-bottom: -6.5vw;
+  }
+}
+
 </style>
