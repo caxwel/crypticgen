@@ -45,7 +45,7 @@ export default {
 
 #twit {
     margin-top: -10px;
-    margin-bottom: -30px;
+    margin-bottom: -5px;
 }
 
 </style>

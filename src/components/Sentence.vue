@@ -60,11 +60,12 @@ export default {
 <style>
 #hello {
   width: 90%;
-  height: 60%;
+  height: 45%;
   display: flex;
   align-items: center;
-    justify-content: center;
+  justify-content: center;
   flex-direction: column;
+  border-radius: 10px;
   background-image: url("../assets/quartz.jpg");
   background-size: cover;
 }

@@ -53,7 +53,8 @@ export default {
 <style>
 #allOfThem {
   width: 90%;
-  height: 40%;
+  height: 55%;
+  border-radius: 10px;
   background-image: url("../assets/quartz.jpg");
   background-size: cover;
   display:flex;
