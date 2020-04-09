@@ -13,6 +13,8 @@ module.exports = function(knex) {
 const setupServer = () => {
   const app = express();
 
+  app.use(express.static(path.resolve(__dirname, "dist")));
+
   app.use(express.json());
   // app.use(express.static(path.join(`${__dirname}/dist`)));
 

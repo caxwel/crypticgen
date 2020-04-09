@@ -1,9 +1,13 @@
 This was created during my time as a student at Code Chrysalis.
 
-# Cryptic Text Generator
+# CrypticGen: Mysterious Prompt Generator
+
+![App Preview](./src/assets/preview.png)
 
 ## Description
-Cryptic Text Generator was originally intended to generate writing prompts, but through lots of contributions from creative friends, it ended up having a really interesting angle. Enjoy!
+CrypticGen: "Probably the first time you've seen those words together"
+
+This project was originally intended to generate writing prompts, but through lots of contributions from creative friends, it ended up having a really interesting angle. Enjoy!
 
 ## Initial Setup
 Clone this project, and then do the following steps:
@@ -11,7 +15,8 @@ Clone this project, and then do the following steps:
  1. Install dependencies.
  2. Initialize the crypticgen database
  3. Use the migration file to create the sentences table
- 4. Seed the table with some ready-to-go weirdness
+ 4. Seed the table with some ready-to-go weirdness if you want
+ 5. Check out the front end via `yarn start`
 
 ## API Endpoints
 ### Generate a new sentence object:
