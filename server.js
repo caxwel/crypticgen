@@ -1,6 +1,6 @@
-const sentenceData = require("./data");
+const sentenceData = require("./src/data");
 const express = require("express");
-const config = require("../knexfile.js");
+const config = require("./knexfile.js");
 const knex = require("knex")(config);
 const path = require("path");
 
@@ -13,7 +13,10 @@ module.exports = function(knex) {
 const setupServer = () => {
   const app = express();
 
+  app.use(express.static(path.resolve(__dirname, "dist")));
+
   app.use(express.json());
+  // app.use(express.static(path.join(`${__dirname}/dist`)));
 
   //gets sentence by id
   app.get("/api/sentence/:id", async (req, res) => {
@@ -114,7 +117,8 @@ const setupServer = () => {
   });
 
   app.get("/", function(req, res) {
-    res.sendFile(path.join(`${__dirname}/../index.html`));
+    res.sendFile(path.join(`${__dirname}/public/index.html`));
+    console.log("hi");
   });
 
   return app;
