@@ -1,4 +1,5 @@
 module.exports = {
+  development: {
   client: "pg",
   connection: process.env.DB_URL || {
     host: process.env.DB_HOST || "127.0.0.1",
@@ -18,4 +19,15 @@ module.exports = {
   seeds: {
     directory: "./src/seeds",
   },
+},
+production: {
+  client: 'pg',
+  connection: process.env.DATABASE_URL,
+  migrations: {
+    directory: __dirname + '/src/migrations',
+  },
+  seeds: {
+    directory: __dirname + '/db/seeds',
+  },
+},
 };
